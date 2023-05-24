@@ -16,7 +16,7 @@ docker stop ubuntu_up
 ##コンテナ削除(createで--rmしているので勝手に削除される）  
 docker rm ubuntu_up  
   
-#node系のコマンド  
+# node系のコマンド  
 ##プロジェクトのセットアップ  
 npm init  
 （全部エンター）  
