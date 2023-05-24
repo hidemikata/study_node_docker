@@ -1,13 +1,9 @@
 const express = require('express');
 const app = express();
 
-app.get('/test', (req, res) => {
-  const data = {
-    message: 'Hello, World!'
-  };
+const sampleHandler = require('./app/controller/sample.js');
 
-  res.status(200).json(data);
-});
+app.get('/test', sampleHandler);
 
 const port = 80;
 
