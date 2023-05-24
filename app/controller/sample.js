@@ -1,10 +1,11 @@
-function handleRequest(req, res) {
+async function handleRequest(req, res) {
 
   const database = require('./database');
   const db = database.createConnection();
-  database.createTable(db);
-  //テーブル生成待ちをしないとダメ。promiseでごにょる。
-  database.insertData(db, { id: 1, name: 'John' });
+  await database.createTable(db);
+  await database.insertData(db, { id: 1, name: 'John1' });
+  await database.insertData(db, { id: 2, name: 'John2' });
+  await database.insertData(db, { id: 3, name: 'John3' });
   database.selectData(db);
   db.close();
 
