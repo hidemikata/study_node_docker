@@ -29,5 +29,7 @@ node index.js
 ##アクセス  
 localhost:8080/test  
 
+コンテナを消したら再度パッケージをインストールが必要。
+promiseがめんどいので中断
 
 
